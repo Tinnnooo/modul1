@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header id="header">
+      <nav class="navbar-nav">
+        <h1>Portfolio</h1>
+        <ul>
+          <li><a href="#content">Home</a></li>
+          <li><a href="#contact-us">Contact us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <header id="header">
+        <nav class="navbar-mobile">
+            <div class="mobile-nav">
+                <div class="hamburger" onclick="mobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="dropdown" id="mobile">
+                    <ul>
+                        <li><a href="#content">Home</a></li>
+                        <li><a href="#contact-us">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+      </header>
+
+    <main>
+      <div class="home" id="content">
+        <div class="content">
+          <h1>Experience</h1>
+          <div class="content-fill">
+            <div class="content-experience">
+              <article id="experience" class="experience">
+                <div class="experience-content">
+                  <img src="./IAI.jpg" alt="IAI" />
+                  <h2>Application Security Specialist</h2>
+                </div>
+                <div class="sub-content">
+                  <p>AIA Singapore</p>
+                  <p class="muted">Sep 2019 - Present · 3 yrs 1 mo</p>
+                </div>
+              </article>
+              <article id="experience" class="experience">
+                <div class="experience-content">
+                  <img src="./citra.jpg" alt="Citra" />
+                  <h2>Software Engineer</h2>
+                </div>
+                <p>Citra Tubindo Engineering</p>
+                <p class="muted">
+                  Apr 2018 - Sep 2019 · 1 yr 6 mos
+                </p>
+              </article>
+              <article id="experience" class="experience">
+                <div class="experience-content">
+                  <img src="./web.jpg" alt="Citra" />
+                  <h2>Web Programmer</h2>
+                </div>
+                <p>PT.BATAMFAST INDONESIA</p>
+                <p class="muted">
+                    Mar 2017 - Mar 2018 · 1 yr 1 mo
+                </p>
+              </article>
+              <article id="experience" class="experience">
+                <div class="experience-content">
+                  <img src="./programmer.jpg" alt="Programmer" />
+                  <h2>Programmer</h2>
+                </div>
+                <p>Labtech International, Ltd</p>
+                <p class="muted">
+                    Feb 2016 - Feb 2017 · 1 yr 1 mo
+                </p>
+              </article>
+            </div>
+
+            <aside id="about" class="about">
+                <h2>About</h2>
+                <div class="about-image">
+                    <img src="./profile.jpg">
+                </div>
+                <div class="about-content">
+                    <h3>Name : Rio Elbat Wibowo</h3>
+                    <p>Kota Batam, Kepulauan Riau</p>
+                </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+        <div class="contact-us" id="contact-us">
+            <div class="contact">
+                <span><a href="https://www.linkedin.com/in/rioelbat/">Linkedin</a></span>
+                <p>Copyright &copy; Rio Wibowo</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

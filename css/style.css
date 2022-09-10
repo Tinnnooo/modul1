@@ -1,0 +1,278 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: ease-in-out all 0.7s;
+}
+
+/* NAVABAR */
+.navbar-nav{
+    width: 100%;    
+    position: fixed;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-nav h1{
+    color: #fff;
+    margin-left: 30px;
+}
+
+.navbar-nav ul{
+    display: flex;
+    margin-right: 80px;
+    list-style: none;
+    justify-content: end;
+    width: 500px;
+    padding: 15px;
+}
+
+.navbar-nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    margin-left: 60px;
+}
+
+.mobile-nav{
+    display: block;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.navbar-mobile span{
+    display: none;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #cdcdcd;
+    border-radius: 3px;
+}
+
+.dropdown{
+    display: none;
+}
+
+.dropdown-mobile ul{
+    list-style-type: none;
+    margin-top: 80px;
+    margin-left: 20px;
+}
+
+.dropdown-mobile{
+    top: 0;
+    left: 0;
+    list-style-type: none;
+    display: block;
+    position: fixed;
+    height: 100%;
+    width: 120px;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+}
+
+.dropdown-mobile ul li{
+    margin-top: 20px;
+}
+
+.dropdown-mobile ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* MAIN */
+.home{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../mountain.png);
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.home .content{
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-top: 110px;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 100%;
+    padding: 12px;
+    height: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.content-fill{
+    display: flex;
+}
+
+.experience{
+    padding: 10px;
+}
+
+.experience h1{
+    color:rgba(0, 0, 0, 0.9);
+}
+
+.content-experience {
+    flex-grow: 1;
+    margin-right: 5px;
+}
+
+
+.experience-content{
+    display: flex;
+    align-items: center;
+}
+
+.experience-content h2{
+    margin-left: 10px;
+}
+
+.experience img{
+    width: 50px;
+}
+
+.experience p{
+    margin-top: 8px;
+}
+
+.experience .muted{
+    color: rgb(138, 138, 138);
+}
+
+.experience{
+    margin-top: 20px;
+    background: #fff;
+}
+
+.about{
+    flex-grow: 1;
+    margin-left: 5px;
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 12px;
+}
+
+.about-image img{
+    width: 200px;
+    display: flex;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.about-content{
+    margin-top: 50px;
+}
+
+.about-content h3{
+    color: rgb(29, 29, 29);
+}
+
+.about-content p{
+    margin-top: 20px;
+}
+
+/* FOOTER */
+footer{
+    width: 100%;
+    height: 30px;
+    background: rgba(0, 0, 0, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact span a{
+    text-decoration: underline;
+    color: #fff;
+    margin-right: 20px;
+}
+.contact p{
+    color: #fff;
+}
+
+@media only screen and (max-width: 678px){
+    .navbar-nav ul{
+        display: none;
+    }
+
+    .navbar-mobile span{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 585px){
+
+    .home .content{
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .experience img{
+        width: 30px;
+    }
+
+    .experience p{
+        font-size: 12px;
+    }
+
+    .experience-content h2{
+        font-size: 16px;
+    }
+
+    .about h2{
+        font-size: 16px;
+    }
+
+    .experience h1{
+        font-size: 18px;
+    }
+
+    .about-image img{
+        width: 120px;
+    }
+
+    .about-content h3{
+        font-size: 14px;
+    }
+    
+    .about-content p{
+        font-size: 12px;
+    }
+
+    .contact span a{
+        font-size: 12px;
+    }
+    .contact p{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 444px){
+    .content-fill{
+        display: block;
+    }
+
+    .about{
+        margin-left: 0;
+    }
+
+    .content-experience{
+        margin-right: 0;
+    }
+}
