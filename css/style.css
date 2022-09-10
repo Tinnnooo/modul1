@@ -210,6 +210,13 @@ footer{
         display: none;
     }
 
+    .navbar-nav {
+        justify-content: end;
+    }
+    .navbar-nav h1{
+        margin-right: 30px;
+    }
+
     .navbar-mobile span{
         display: block;
     }
